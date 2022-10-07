@@ -3,39 +3,63 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-variant: small-caps;
+  font-family: "Times New Roman", Times, serif;
 }
-
 .main-container {
-  background-color: rgb(35, 98, 156);
+  background-color: rgb(255, 255, 255);
   display: flex;
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .top-cont {
+  position: fixed;
+  background-color: black;
+  color: white;
   display: flex;
   width: 100vw;
   height: 10vh;
   text-align: center;
   justify-content: center;
+  box-shadow: inset 0px -5px 10px 1px rgb(56, 53, 53);
 }
 
 #rgb {
   padding-left: 10px;
 }
 
-#btn {
-  left: 50%;
-  top: 50%;
-  background-color: black;
-  color: white;
-  position: absolute;
+#btn-back {
   height: 200px;
   width: 200px;
-  transform: translate(-100px, -100px);
   border-radius: 50%;
-  border: solid 1px black;
+  border: none;
+  background-color: rgba(116, 33, 33);
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 7px 1px black;
 }
-
-#btn:hover {
-  background-color: rgb(44, 40, 40);
+#btn-front {
+  display: flex;
+  background-color: rgb(212, 58, 58);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transform: translate(-6px, -10px);
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  box-shadow: inset 0px 4px 4px 1px rgb(227, 128, 128);
+}
+#btn-front:hover {
+  transform: translate(-6px, -14px);
+}
+#btn-front:active {
+  transform: translate(-6px, -7px);
+  transition: 0.2s;
+  background-color: rgb(167, 47, 47);
+  box-shadow: inset 0px 4px 6px 1.2px rgb(205, 81, 81);
+  color: rgb(0, 0, 0);
 }
