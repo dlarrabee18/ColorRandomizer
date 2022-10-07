@@ -1,0 +1,41 @@
+body {
+  display: flexbox;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-container {
+  background-color: rgb(35, 98, 156);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.top-cont {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+}
+
+#rgb {
+  padding-left: 10px;
+}
+
+#btn {
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  transform: translate(-100px, -100px);
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+#btn:hover {
+  background-color: rgb(44, 40, 40);
+}
