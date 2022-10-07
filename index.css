@@ -63,3 +63,6 @@ body {
   box-shadow: inset 0px 4px 6px 1.2px rgb(205, 81, 81);
   color: rgb(0, 0, 0);
 }
+.btn-back:focus:not(:focus-visible) {
+  outline: none;
+}
