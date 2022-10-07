@@ -40,6 +40,7 @@ body {
   font-size: 2rem;
   cursor: pointer;
   box-shadow: 0px 4px 7px 1px black;
+  outline-offset: 6px;
 }
 #btn-front {
   display: flex;
